@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../pages/welcome/view.dart';
-import '../../pages/welcome/bindings.dart';
+import '../pages/sign_in/index.dart';
+import '../pages/welcome/index.dart';
 import 'names.dart';
 import 'observers.dart';
 
@@ -17,6 +17,11 @@ class AppPages {
       name: AppRoutes.INITIAL,
       page: () => const WelcomePage(),
       binding: WelcomeBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.SIGN_IN,
+      page: () => const SignInPage(),
+      binding: SignInBinding(),
     ),
   ];
 }
